@@ -1,0 +1,45 @@
+.navbar {
+	z-index: 9;
+	@media (max-width: 992px) {
+		background-color: $backColor !important;
+	}
+	.fa-search:hover,
+	.fa-search:focus {
+		color: $whiteColor !important;
+		cursor: pointer;
+	}
+	.navbar-toggler {
+		outline: none;
+	}
+	.navbar-nav {
+		position: relative;
+		top: 2px;
+		.nav-item {
+			@media (min-width: 1200px) {
+				padding-left: 40px !important;
+				padding-right: 40px !important;
+			}
+			@media (min-width: 992px) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			a:hover,
+			a:focus {
+				color: $whiteColor !important;
+			}
+		}
+	}
+	form {
+		input {
+			border-radius: 30px;
+			background-color: #000 !important;
+			outline: none;
+		}
+		span {
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+	}
+}

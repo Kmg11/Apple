@@ -1,0 +1,9 @@
+.transition {transition: all 0.2s linear !important;}
+.my-paragraph {
+	color: rgba(255, 255, 255, 0.5) !important;
+	margin: auto !important;
+	width: 60% !important;
+	@media (max-width: 991.98px) {
+		width: 95% !important;
+	}
+}

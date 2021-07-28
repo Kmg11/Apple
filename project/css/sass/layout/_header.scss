@@ -1,0 +1,48 @@
+.main-header {
+	.carousel {
+		.carousel-inner {
+			.carousel-item {
+				@media (max-width: 991.98px) {
+					.overlay {
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-color: rgba($blackColor, 0.5);
+					}
+				}
+				h2 {@media (max-width: 767.98px) {font-size: 25px !important;}}
+				background-size: cover !important;
+				& {@media (max-width: 767.98px) {background-position: center !important;}}
+				.text-content {
+					min-height: 580px;
+					max-height: 900px;
+					p {@media (min-width: 992px) {width: 38%;}}
+					.my-control {
+						bottom: 30px;
+						left: 50px;
+						.carousel-control-prev,
+						.carousel-control-next {
+							border-radius: 50%;
+							width: 40px;
+							height: 40px;
+							&:hover {
+								background-color: $whiteColor;
+								color: $blackColor !important;
+								transform: scale(0.9);
+							}
+						}
+						@media (max-width: 991.98px) {
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+					.ipad {
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+}

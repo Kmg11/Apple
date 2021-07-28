@@ -1,0 +1,17 @@
+.my-button {
+	@extend .transition;
+	padding: 1rem 0 !important;
+	display: block !important;
+	width: 200px !important;
+	font-size: 20px !important;
+	border: 1px solid $whiteColor !important;
+	border-radius: 30px !important;
+	text-align: center !important;
+	text-decoration: none !important;
+	color: $whiteColor !important;
+	&:hover {
+		background-color: $whiteColor !important;
+		color: $blackColor !important;
+		transform: scale(0.9) !important;
+	}
+}
