@@ -1,0 +1,615 @@
+@import url(bootstrap.min.css);
+@import url(all.css);
+@import url(slick.css);
+@import url(slick-theme.css);
+@import url(animate.css);
+body {
+  background-color: #171515;
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(125deg, #000, #171515, #000);
+}
+
+article, section, header, footer {
+  overflow: hidden !important;
+}
+
+.search {
+  background-color: #171515;
+  z-index: 10;
+  top: -74px;
+}
+.search form input {
+  border-radius: 30px;
+  background-color: #000 !important;
+  outline: none;
+}
+.search form span:first-of-type {
+  left: -75px;
+  cursor: pointer;
+}
+.search form span:last-of-type {
+  font-size: 30px;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+.search form span:last-of-type:hover {
+  color: #dc3545 !important;
+}
+
+.navbar {
+  z-index: 9;
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #171515 !important;
+  }
+}
+.navbar .fa-search:hover,
+.navbar .fa-search:focus {
+  color: #fff !important;
+  cursor: pointer;
+}
+.navbar .navbar-toggler {
+  outline: none;
+}
+.navbar .navbar-nav {
+  position: relative;
+  top: 2px;
+}
+@media (min-width: 1200px) {
+  .navbar .navbar-nav .nav-item {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.navbar .navbar-nav .nav-item a:hover,
+.navbar .navbar-nav .nav-item a:focus {
+  color: #fff !important;
+}
+.navbar form input {
+  border-radius: 30px;
+  background-color: #000 !important;
+  outline: none;
+}
+.navbar form span {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.main-header .carousel .carousel-inner .carousel-item {
+  background-size: cover !important;
+}
+@media (max-width: 991.98px) {
+  .main-header .carousel .carousel-inner .carousel-item .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 767.98px) {
+  .main-header .carousel .carousel-inner .carousel-item h2 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-header .carousel .carousel-inner .carousel-item {
+    background-position: center !important;
+  }
+}
+.main-header .carousel .carousel-inner .carousel-item .text-content {
+  min-height: 580px;
+  max-height: 900px;
+}
+@media (min-width: 992px) {
+  .main-header .carousel .carousel-inner .carousel-item .text-content p {
+    width: 38%;
+  }
+}
+.main-header .carousel .carousel-inner .carousel-item .text-content .my-control {
+  bottom: 30px;
+  left: 50px;
+}
+.main-header .carousel .carousel-inner .carousel-item .text-content .my-control .carousel-control-prev,
+.main-header .carousel .carousel-inner .carousel-item .text-content .my-control .carousel-control-next {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.main-header .carousel .carousel-inner .carousel-item .text-content .my-control .carousel-control-prev:hover,
+.main-header .carousel .carousel-inner .carousel-item .text-content .my-control .carousel-control-next:hover {
+  background-color: #fff;
+  color: #000 !important;
+  transform: scale(0.9);
+}
+@media (max-width: 991.98px) {
+  .main-header .carousel .carousel-inner .carousel-item .text-content .my-control {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.main-header .carousel .carousel-inner .carousel-item .text-content .ipad {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services {
+  background-color: #171515;
+  padding: 100px 0;
+}
+@media (max-width: 767.98px) {
+  .services h2 {
+    font-size: 35px !important;
+  }
+}
+.services .serv {
+  background-color: #000;
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.services .serv span {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.services .serv:hover h4 {
+  opacity: 0;
+}
+.services .serv:hover span {
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.iphone .iphone-desc {
+  background: url("../img/iphone/main-background.jpg") no-repeat top;
+  background-size: cover;
+}
+.iphone .iphone-desc .overlay {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #000, #171515, transparent);
+}
+.iphone .take-look {
+  padding-top: 130px;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/iphone/take-look-backgrounnd2.png") no-repeat;
+  background-size: cover;
+}
+.iphone .take-look .info a {
+  width: 220px !important;
+}
+@media (max-widt: 767.98px) {
+  .iphone .take-look .info h2 {
+    font-size: 45px !important;
+  }
+}
+.iphone .take-look .img img {
+  bottom: 0;
+  right: 0;
+}
+.iphone .cameras {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+  background: url("../img/iphone/camers-background.png") no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768.98px) {
+  .iphone .cameras {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}
+.iphone .all-cameras {
+  background-color: #171515;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.iphone .all-cameras p {
+  font-size: 28px;
+  line-height: 1.2;
+}
+@media (max-width: 991.98px) {
+  .iphone .all-cameras img {
+    width: 100%;
+  }
+}
+.iphone .camera-one,
+.iphone .camera-two,
+.iphone .camera-three {
+  padding-top: 100px;
+  overflow: hidden;
+}
+.iphone .camera-one h3,
+.iphone .camera-two h3,
+.iphone .camera-three h3 {
+  color: #f6c408;
+  border-bottom: 1px solid #fff;
+  width: 310px;
+}
+@media (max-width: 991.98px) {
+  .iphone .camera-one img,
+  .iphone .camera-two img,
+  .iphone .camera-three img {
+    width: 100%;
+  }
+}
+.iphone .camera-one, .iphone .camera-three {
+  background-color: #000 !important;
+}
+.iphone .camera-two {
+  background-color: #171515 !important;
+}
+.iphone .camera-two h3 {
+  width: 210px;
+}
+
+.music header {
+  overflow: hidden;
+  padding: 55px 0;
+  background-image: linear-gradient(125deg, #f36c62, #bf4fd3);
+}
+.music header .info a:first-of-type {
+  display: inline-block !important;
+}
+.music header .img {
+  width: 100%;
+  height: 100%;
+}
+.music header .img img {
+  width: 170%;
+}
+.music .music-slider ul.switch-tab li.active, .music .music-slider ul.switch-tab li:hover {
+  color: #bf4fd3;
+  cursor: pointer;
+}
+.music .music-slider ul.switch-tab li.active::after, .music .music-slider ul.switch-tab li:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+  background-color: #bf4fd3;
+}
+@media (max-width: 767px) {
+  .music .music-slider ul.switch-tab li {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .music .music-slider ul.switch-tab li.active, .music .music-slider ul.switch-tab li:hover {
+    background-color: #171515;
+  }
+  .music .music-slider ul.switch-tab li.active::after, .music .music-slider ul.switch-tab li:hover::after {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .music .music-slider ul.switch-tab li {
+    width: 50%;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .music .music-slider ul.switch-tab li.active, .music .music-slider ul.switch-tab li:hover {
+    background-color: #171515;
+  }
+  .music .music-slider ul.switch-tab li.active::after, .music .music-slider ul.switch-tab li:hover::after {
+    display: none;
+  }
+}
+.music .music-slider .tabs .tab:not(:first-of-type) {
+  display: none;
+}
+.music .music-slider .tabs .tab .slick-prev, .music .music-slider .tabs .tab .slick-next {
+  top: 40%;
+}
+.music .music-slider .tabs .tab .slick-prev {
+  right: 0;
+}
+.music .music-slider .tabs .tab .slick-prev::before, .music .music-slider .tabs .tab .slick-next::before {
+  content: "\f0a8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+}
+.music .music-slider .tabs .tab .slick-prev::before {
+  content: "\f0a8";
+}
+.music .music-slider .tabs .tab .slick-next::before {
+  content: "\f0a9";
+}
+.music .music-slider .tabs .tab .song .img:hover .overlay {
+  opacity: 1;
+}
+.music .music-slider .tabs .tab .song .img .overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.music .music-slider .tabs .tab .song .img .overlay i {
+  right: 5px;
+  bottom: 5px;
+  color: #bf4fd3;
+  background-color: #171515;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.air-pods a {
+  font-size: 18px;
+}
+.air-pods a:hover {
+  color: #007bff !important;
+}
+.air-pods header {
+  background-color: #000;
+}
+.air-pods header h2 {
+  font-size: 40px !important;
+}
+.air-pods .desc {
+  background: url("../img/apple-music/desc-background.jpg") no-repeat center;
+  background-size: cover;
+}
+.air-pods .desc .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 120px 0;
+}
+@media (max-width: 767.98px) {
+  .air-pods .desc .overlay .h1 {
+    font-size: 35px;
+  }
+}
+.air-pods .creation {
+  padding: 80px 0;
+  background-color: #1c1c1c;
+}
+.air-pods .creation .main-img {
+  width: 100%;
+  height: 500px;
+  background: url("../img/apple-music/creation-background.jpg") no-repeat center;
+  background-size: cover;
+}
+@media (max-width: 767.98px) {
+  .air-pods .creation .main-img {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+.air-pods .working {
+  padding: 80px 0;
+}
+.air-pods .working .img {
+  height: 100px;
+}
+@media (max-width: 767.98px) {
+  .air-pods .working .h1 {
+    font-size: 30px;
+  }
+}
+
+.mac a {
+  color: #007bff;
+}
+.mac header {
+  padding: 100px 0;
+  background: #000;
+}
+.mac header .img {
+  width: 100%;
+  height: 440px;
+  background: url("../img/mac/mac-book-air.png") no-repeat center;
+  background-size: cover;
+}
+@media (max-width: 767.98px) {
+  .mac header .img {
+    height: 250px;
+  }
+}
+.mac .which {
+  padding: 80px 0;
+  background-color: #1c1c1c;
+}
+.mac .which h2 {
+  font-size: 33px !important;
+}
+.mac .what .macos {
+  padding: 150px 0;
+  background: url("../img/mac/macos-baackground.jpg") no-repeat center;
+  background-size: cover;
+}
+.mac .what .macos p {
+  color: #fff !important;
+}
+.mac .what .desc {
+  padding: 100px 0;
+  background-color: #1c1c1c;
+}
+.mac .apps-container {
+  padding: 70px 0 70px;
+}
+.mac .apps-container ul li {
+  position: relative;
+  width: 140px;
+  height: 160px;
+  background-color: #1c1c1c;
+  cursor: pointer;
+  filter: grayscale(1);
+  border-radius: 10px;
+}
+.mac .apps-container ul li:hover, .mac .apps-container ul li.active {
+  box-shadow: 0 12px 15px -10px rgba(102, 102, 102, 0.8);
+  filter: grayscale(0);
+}
+.mac .apps-container ul li img {
+  position: relative;
+  top: -10px;
+  width: 45%;
+}
+.mac .apps-container ul li h6 {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.mac .apps-container .apps .app:not(.active) {
+  display: none;
+}
+.mac .built-in {
+  background-color: #000;
+}
+.mac .pro-apps {
+  background-color: #171515;
+}
+
+footer {
+  background-color: #000;
+}
+footer .scroll-to-top {
+  right: 20px;
+  top: -5px;
+  background-color: #171515;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer .scroll-to-top:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+footer ul li:not(:first-of-type) {
+  cursor: pointer;
+}
+footer ul li:not(:first-of-type):not(:first-of-type):hover {
+  color: #ddd !important;
+}
+footer a {
+  color: #007bff !important;
+}
+footer .copy {
+  border-top: 1px solid #333;
+}
+footer .copy ul li {
+  cursor: pointer;
+}
+footer .copy ul li:hover {
+  color: #ddd !important;
+}
+
+.loading {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 21;
+}
+.loading i {
+  font-size: 200px;
+}
+.loading .loader {
+  width: 300px;
+  height: 20px;
+  background-color: #171515;
+  border-radius: 30px;
+  position: relative;
+}
+.loading .loader .width {
+  display: block;
+  width: 300px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  animation: loader 5s ease-out;
+}
+.loading h2 {
+  letter-spacing: 40px;
+  left: 22px;
+  animation: text 5s ease-out;
+}
+
+@keyframes loader {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.transition, .my-button {
+  transition: all 0.2s linear !important;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.my-button {
+  padding: 1rem 0 !important;
+  display: block !important;
+  width: 200px !important;
+  font-size: 20px !important;
+  border: 1px solid #fff !important;
+  border-radius: 30px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.my-button:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  transform: scale(0.9) !important;
+}
+
+.my-paragraph {
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin: auto !important;
+  width: 60% !important;
+}
+@media (max-width: 991.98px) {
+  .my-paragraph {
+    width: 95% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

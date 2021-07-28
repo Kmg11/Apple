@@ -1,0 +1,539 @@
+// Start Import Files
+
+@import "bootstrap.min.css";
+@import "all.css";
+@import "slick.css";
+@import "slick-theme.css";
+@import "animate.css";
+
+// End Import
+// Start Variables
+
+$backColor: #171515;
+$whiteColor: #fff;
+$blackColor: #000;
+
+// End Variables
+// Start Main Rules
+
+body {
+	background-color: $backColor;
+	color: $whiteColor !important;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(125deg, $blackColor, $backColor, $blackColor);
+}
+
+article, section, header, footer {overflow: hidden !important;}
+
+// End Main Rules
+// Start Search
+
+.search {
+	background-color: $backColor;
+	z-index: 10;
+	top: -74px;
+	form {
+		input {border-radius: 30px; background-color: #000 !important; outline: none;}
+		span:first-of-type {left: -75px; cursor: pointer;}
+		span:last-of-type {
+			font-size: 30px;
+			top: 50%;
+			right: 120px;
+			transform: translateY(-50%);
+			cursor: pointer;
+			color: #888;
+			&:hover {color: #dc3545 !important;}
+		}
+	}
+}
+
+// End Search
+// Start Navbar
+
+.navbar {
+	z-index: 9;
+	@media (max-width: 992px) {
+		background-color: $backColor !important;
+	}
+	.fa-search:hover,
+	.fa-search:focus {
+		color: $whiteColor !important;
+		cursor: pointer;
+	}
+	.navbar-toggler {
+		outline: none;
+	}
+	.navbar-nav {
+		position: relative;
+		top: 2px;
+		.nav-item {
+			@media (min-width: 1200px) {
+				padding-left: 40px !important;
+				padding-right: 40px !important;
+			}
+			@media (min-width: 992px) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			a:hover,
+			a:focus {
+				color: $whiteColor !important;
+			}
+		}
+	}
+	form {
+		input {
+			border-radius: 30px;
+			background-color: #000 !important;
+			outline: none;
+		}
+		span {
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+	}
+}
+
+// End Navbar
+// Start Header
+
+.main-header {
+	.carousel {
+		.carousel-inner {
+			.carousel-item {
+				@media (max-width: 991.98px) {
+					.overlay {
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-color: rgba($blackColor, 0.5);
+					}
+				}
+				h2 {@media (max-width: 767.98px) {font-size: 25px !important;}}
+				background-size: cover !important;
+				& {@media (max-width: 767.98px) {background-position: center !important;}}
+				.text-content {
+					min-height: 580px;
+					max-height: 900px;
+					p {@media (min-width: 992px) {width: 38%;}}
+					.my-control {
+						bottom: 30px;
+						left: 50px;
+						.carousel-control-prev,
+						.carousel-control-next {
+							border-radius: 50%;
+							width: 40px;
+							height: 40px;
+							&:hover {
+								background-color: $whiteColor;
+								color: $blackColor !important;
+								transform: scale(0.9);
+							}
+						}
+						@media (max-width: 991.98px) {
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+					.ipad {
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+// End Header
+// Start Services
+
+.services {
+	background-color: $backColor;
+	padding: 100px 0;
+	h2 {
+		@media (max-width: 767.98px) {font-size: 35px !important;}
+	}
+	.serv {
+		background-color: $blackColor;
+		width: 180px;
+		height: 180px;
+		border-radius: 30px;
+		cursor: pointer;
+		span {
+			bottom: -20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-color: $whiteColor;
+			border-radius: 50%;
+		}
+		&:hover {
+			h4 {opacity: 0;}
+			span {
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 100%;
+				height: 100%;
+				border-radius: 25px;
+				padding: 50px;
+			}
+		}
+	}
+}
+
+// End Services
+// Start iPhone
+
+.iphone {
+	.iphone-desc {
+		background: url("../img/iphone/main-background.jpg") no-repeat top;
+		background-size: cover;
+		.overlay {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			height: 100%;
+			background-image: linear-gradient(to bottom, $blackColor, $backColor, transparent);
+		}
+	}
+	.take-look {
+		padding-top: 130px;
+		width: 100%;
+		overflow: hidden;
+		background: url("../img/iphone/take-look-backgrounnd2.png") no-repeat;
+		background-size: cover;
+		.info {
+			a {width: 220px !important;}
+			h2 {@media (max-widt: 767.98px) {font-size: 45px !important;}}
+		}
+		.img {img {bottom: 0; right: 0;}}
+	}
+	.cameras {
+		padding-top: 120px !important;
+		padding-bottom: 120px !important;
+		@media (max-width: 768.98px) {
+			padding-top: 80px !important;
+			padding-bottom: 80px !important;
+		}
+		background: url("../img/iphone/camers-background.png") no-repeat;
+		background-size: cover;
+	}
+	.all-cameras {
+		background-color: $backColor;
+		padding-top: 100px;
+		overflow: hidden;
+		p {font-size: 28px; line-height: 1.2;}
+		img {@media (max-width: 991.98px) {width: 100%;}}
+	}
+	.camera-one,
+	.camera-two,
+	.camera-three {
+		padding-top: 100px;
+		overflow: hidden;
+		h3 {color: #f6c408; border-bottom: 1px solid $whiteColor; width: 310px;}
+		img {@media (max-width: 991.98px) {width: 100%;}}
+	}
+	.camera-one, .camera-three {background-color: $blackColor !important;}
+	.camera-two {h3 {width: 210px;} background-color: $backColor !important;}
+}
+
+// End iPhone
+// Start Music
+
+.music {
+	header {
+		overflow: hidden;
+		padding: 55px 0;
+		background-image: linear-gradient(125deg, #f36c62, #bf4fd3);
+		.info {
+			a {
+				&:first-of-type {display: inline-block !important;}
+			}
+		}
+		.img {width: 100%; height: 100%; img {width: 170%;}}
+	}
+	.music-slider {
+		ul.switch-tab {
+			li {
+				&.active,
+				&:hover {
+					color: #bf4fd3;
+					cursor: pointer;
+					&::after {
+						content: "";
+						display: block;
+						width: 100%;
+						height: 1px;
+						margin-top: 5px;
+						background-color: #bf4fd3;
+					}
+				}
+				@media (max-width: 767px) {
+					width: 100%;
+					padding: 15px;
+					font-weight: bold;
+					&.active,
+					&:hover {
+						&::after {display: none;}
+						background-color: $backColor;
+					}
+				}
+				@media (min-width: 768px) and (max-width: 991px) {
+					width: 50%;
+					padding: 15px;
+					font-weight: bold;
+					&.active,
+					&:hover {
+						&::after {display: none;}
+						background-color: $backColor;
+					}
+				}
+			}
+		}
+		.tabs {
+			.tab {
+				&:not(:first-of-type) {display: none;}
+				.slick-prev, .slick-next {top: 40%;}
+				.slick-prev {right: 0;}
+				.slick-prev::before, .slick-next::before {
+					content: "\f0a8";
+					font-family: "Font Awesome 5 Free";
+					font-weight: 900;
+					color: $whiteColor;
+				}
+				.slick-prev::before {content: "\f0a8";}
+				.slick-next::before {content: "\f0a9";}
+
+				.song {
+					.img {
+						&:hover {
+							.overlay {opacity: 1;}
+						}
+						.overlay {
+							top: 0;
+							left: 0;
+							height: 100%;
+							width: 100%;
+							opacity: 0;
+							cursor: pointer;
+							i {
+								right: 5px;
+								bottom: 5px;
+								color: #bf4fd3;
+								background-color: $backColor;
+								padding: 15px;
+								border-radius: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// End Music
+// Start AirPods
+
+.air-pods {
+	a {
+		font-size: 18px;
+		&:hover {color: #007bff !important;}
+	}
+	header {
+		background-color: $blackColor;
+		h2 {font-size: 40px !important;}
+	}
+	.desc {
+		background: url("../img/apple-music/desc-background.jpg") no-repeat center;
+		background-size: cover;
+		.overlay {
+			width: 100%; height: 100%; background-color: rgba($blackColor, 0.4); padding: 120px 0;
+			.h1 {
+				@media (max-width: 767.98px) {font-size: 35px;}
+			}
+		}
+	}
+	.creation {
+		padding: 80px 0;
+		background-color: #1c1c1c;
+		.main-img {
+			width: 100%;
+			height: 500px;
+			@media (max-width: 767.98px) {height: 200px; margin-bottom: 20px;}
+			background: url("../img/apple-music/creation-background.jpg") no-repeat center;
+			background-size: cover;
+		}
+	}
+	.working {
+		padding: 80px 0;
+		.img {height: 100px;}
+		.h1 {@media (max-width: 767.98px) {font-size: 30px;}}
+	}
+}
+
+// End AirPods
+// Start Mac
+
+.mac {
+	a {color: #007bff;}
+	header {
+		padding: 100px 0;
+		background: $blackColor;
+		.img {
+			width: 100%;
+			height: 440px;
+			background: url("../img/mac/mac-book-air.png") no-repeat center;
+			background-size: cover;
+			@media (max-width: 767.98px) {height: 250px;}
+		}
+	}
+	.which {
+		padding: 80px 0; background-color: #1c1c1c;
+		h2 {font-size: 33px !important;}
+	}
+	.what {
+		.macos {
+			padding: 150px 0;
+			background: url("../img/mac/macos-baackground.jpg") no-repeat center;
+			background-size: cover;
+			p {color: $whiteColor !important;}
+		}
+		.desc {padding: 100px 0; background-color: #1c1c1c;}
+	}
+	.apps-container {
+		padding: 70px 0 70px;
+		ul {
+			li {
+				position: relative;
+				width: 140px;
+				height: 160px;
+				background-color: #1c1c1c;
+				cursor: pointer;
+				filter: grayscale(1);
+				border-radius: 10px;
+				&:hover, &.active {box-shadow: 0 12px 15px -10px rgba(#666, 0.8); filter: grayscale(0);}
+				img {position: relative; top: -10px; width: 45%;}
+				h6 {position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%);}
+			}
+		}
+		.apps {.app {&:not(.active) {display: none;}}}
+	}
+	.built-in {background-color: $blackColor;}
+	.pro-apps {background-color: $backColor;}
+}
+
+// End Mac
+// Start Footer
+
+footer {
+	.scroll-to-top {
+		right: 20px;
+		top: -5px;
+		background-color: $backColor;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 5px;
+		cursor: pointer;
+		&:hover {
+			background-color: $whiteColor !important;
+			color: $blackColor !important;
+		}
+	}
+	background-color: $blackColor;
+	ul {
+		li:not(:first-of-type) {
+			cursor: pointer;
+			&:not(:first-of-type):hover {color: #ddd !important;}}
+	}
+	a {color: #007bff !important;}
+	.copy {
+		border-top: 1px solid #333;
+		ul {li {cursor: pointer; &:hover {color: #ddd !important;}}}
+	}
+}
+
+// End Footer
+// Start Loading Screen
+
+.loading {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $blackColor;
+	z-index: 21;
+	i {font-size: 200px;}
+	.loader {
+		width: 300px;
+		height: 20px;
+		background-color: $backColor;
+		border-radius: 30px;
+		position: relative;
+		.width {
+			display: block;
+			width: 300px;
+			height: 20px;
+			background-color: $whiteColor;
+			border-radius: 30px;
+			animation: loader 5s ease-out;
+		}
+	}
+	h2 {
+		letter-spacing: 40px;
+		left: 22px;
+		animation: text 5s ease-out;
+	}
+}
+
+@keyframes loader {
+	from {width: 0;}
+	to {width: 300px;}
+}
+
+@keyframes text {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+// End Loading Screen
+// Start My Framework
+
+.transition {transition: all 0.2s linear !important;}
+
+p {color: rgba(255, 255, 255, 0.5) !important;}
+
+.my-button {
+	@extend .transition;
+	padding: 1rem 0 !important;
+	display: block !important;
+	width: 200px !important;
+	font-size: 20px !important;
+	border: 1px solid $whiteColor !important;
+	border-radius: 30px !important;
+	text-align: center !important;
+	text-decoration: none !important;
+	color: $whiteColor !important;
+	&:hover {
+		background-color: $whiteColor !important;
+		color: $blackColor !important;
+		transform: scale(0.9) !important;
+	}
+}
+
+.my-paragraph {
+	color: rgba(255, 255, 255, 0.5) !important;
+	margin: auto !important;
+	width: 60% !important;
+	@media (max-width: 991.98px) {
+		width: 95% !important;
+	}
+}
+
+// End My Framework
