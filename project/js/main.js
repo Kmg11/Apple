@@ -1,5 +1,3 @@
-/// <reference types="jquery" />
-
 $(function () {
 	// Navbar
 	var myWindow = $(window),
@@ -7,63 +5,69 @@ $(function () {
 
 	// Scroll Navbar
 	if (myWindow.scrollTop() >= "100") {
-		navBar.css("backgroundColor", '#171515');
+		navBar.css("backgroundColor", "#171515");
 	} else {
-		navBar.css("backgroundColor", 'transparent');
+		navBar.css("backgroundColor", "transparent");
 	}
 
 	myWindow.scroll(function () {
 		if (myWindow.scrollTop() >= "100") {
-			navBar.css("backgroundColor", '#171515');
+			navBar.css("backgroundColor", "#171515");
 		} else {
-			navBar.css("backgroundColor", 'transparent');
+			navBar.css("backgroundColor", "transparent");
 		}
 	});
 
 	// Search
 	$(".searchbar").click(function () {
-		$("#search").animate({
-			top: 0
-		}, 500);
+		$("#search").animate(
+			{
+				top: 0,
+			},
+			500
+		);
 	});
 	$("#closeSearch").click(function () {
-		$("#search").animate({
-			top: "-74px"
-		}, 500);
+		$("#search").animate(
+			{
+				top: "-74px",
+			},
+			500
+		);
 	});
 
 	// Fit Text
 	$(".fit-text").fitText(0.9, {
-		minFontSize: '50px',
-		maxFontSize: '180px'
+		minFontSize: "50px",
+		maxFontSize: "180px",
 	});
 
 	$(".music-fit-text").fitText(0.8, {
-		minFontSize: '50px',
-		maxFontSize: '180px'
+		minFontSize: "50px",
+		maxFontSize: "180px",
 	});
 
 	$(".h3-fit-text").fitText(2.8, {
-		minFontSize: '1px',
-		maxFontSize: '30px'
+		minFontSize: "1px",
+		maxFontSize: "30px",
 	});
 
 	$(".upper-cameras").fitText(1.4, {
-		minFontSize: '40px',
-		maxFontSize: '1200px'
+		minFontSize: "40px",
+		maxFontSize: "1200px",
 	});
 
 	$(".mt-big-fit-text").fitText(1.7, {
-		minFontSize: '40px',
-		maxFontSize: '120px'
+		minFontSize: "40px",
+		maxFontSize: "120px",
 	});
 
 	$(".my-normal-fit-text").fitText(1.7, {
-		minFontSize: '30px',
-		maxFontSize: '50px'
+		minFontSize: "30px",
+		maxFontSize: "50px",
 	});
 
-	$('.tab').slick({
+	$(".tab").slick({
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -71,24 +75,24 @@ $(function () {
 					slidesToShow: 3,
 					slidesToScroll: 3,
 					infinite: true,
-					dots: true
-				}
+					dots: true,
+				},
 			},
 			{
 				breakpoint: 600,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 2
-				}
+					slidesToScroll: 2,
+				},
 			},
 			{
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 
 	// Music Slider
@@ -98,7 +102,8 @@ $(function () {
 			$(".tabs > div").hide();
 			$($(this).data("music")).fadeIn(700);
 			$(".tab").slick("refresh");
-		} else { }
+		} else {
+		}
 	});
 
 	// Apps Built In
@@ -122,11 +127,14 @@ $(function () {
 	// Scroll To Elements
 	$("a, .serv").click(function (e) {
 		e.preventDefault();
-		if (typeof $(this).data("scroll") !== 'undefined') {
-			$("html, body").animate({
-				scrollTop: $($(this).data("scroll")).offset().top - 80
-			}, 1500);
-			
+		if (typeof $(this).data("scroll") !== "undefined") {
+			$("html, body").animate(
+				{
+					scrollTop: $($(this).data("scroll")).offset().top - 80,
+				},
+				1500
+			);
+
 			let navbarToggler = $(".navbar-toggler");
 			let navbarCollapse = $(".navbar-collapse ");
 			if (navbarCollapse.hasClass("show")) {
@@ -138,8 +146,11 @@ $(function () {
 
 	// Scroll To Top
 	$(".scroll-to-top").click(function () {
-		$("html, body").animate({
-			scrollTop: 0
-		}, 3000);
+		$("html, body").animate(
+			{
+				scrollTop: 0,
+			},
+			3000
+		);
 	});
 });

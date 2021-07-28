@@ -5,10 +5,18 @@
 		background-image: linear-gradient(125deg, #f36c62, #bf4fd3);
 		.info {
 			a {
-				&:first-of-type {display: inline-block !important;}
+				&:first-of-type {
+					display: inline-block !important;
+				}
 			}
 		}
-		.img {width: 100%; height: 100%; img {width: 170%;}}
+		.img {
+			width: 100%;
+			height: 100%;
+			img {
+				width: 170%;
+			}
+		}
 	}
 	.music-slider {
 		ul.switch-tab {
@@ -32,7 +40,9 @@
 					font-weight: bold;
 					&.active,
 					&:hover {
-						&::after {display: none;}
+						&::after {
+							display: none;
+						}
 						background-color: $backColor;
 					}
 				}
@@ -42,7 +52,9 @@
 					font-weight: bold;
 					&.active,
 					&:hover {
-						&::after {display: none;}
+						&::after {
+							display: none;
+						}
 						background-color: $backColor;
 					}
 				}
@@ -50,22 +62,36 @@
 		}
 		.tabs {
 			.tab {
-				&:not(:first-of-type) {display: none;}
-				.slick-prev, .slick-next {top: 40%;}
-				.slick-prev {right: 0;}
-				.slick-prev::before, .slick-next::before {
+				&:not(:first-of-type) {
+					display: none;
+				}
+				.slick-prev,
+				.slick-next {
+					top: 40%;
+				}
+				.slick-prev {
+					right: 0;
+				}
+				.slick-prev::before,
+				.slick-next::before {
 					content: "\f0a8";
 					font-family: "Font Awesome 5 Free";
 					font-weight: 900;
 					color: $whiteColor;
 				}
-				.slick-prev::before {content: "\f0a8";}
-				.slick-next::before {content: "\f0a9";}
+				.slick-prev::before {
+					content: "\f0a8";
+				}
+				.slick-next::before {
+					content: "\f0a9";
+				}
 
 				.song {
 					.img {
 						&:hover {
-							.overlay {opacity: 1;}
+							.overlay {
+								opacity: 1;
+							}
 						}
 						.overlay {
 							top: 0;

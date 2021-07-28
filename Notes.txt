@@ -22,7 +22,12 @@ Version 2;-
 
 Version 3:-
 - [ Done ] Remove Width & Height Attribute From Images
-- [ Done ] SEO
-- Make Librarys Local
-- Best Practive
+- [ Done ] Improve Some Code
+- [ Done ] Upgrade jQuery Version For Security Errors
+- [ Done ] Make Librarys Local & Remove CDN
+- [ Done ] SEO 100%
+- [ Done ] Best Practive 100%
+- [ Done ] Accessibility 100%
+- Review Gulp
 - Responsive On Iphone SE
+- Readme FIle Add How To Edit In This Application

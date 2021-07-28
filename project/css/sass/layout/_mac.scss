@@ -1,5 +1,7 @@
 .mac {
-	a {color: #007bff;}
+	a {
+		color: #007bff;
+	}
 	header {
 		padding: 100px 0;
 		background: $blackColor;
@@ -8,21 +10,31 @@
 			height: 440px;
 			background: url("../img/mac/mac-book-air.png") no-repeat center;
 			background-size: cover;
-			@media (max-width: 767.98px) {height: 250px;}
+			@media (max-width: 767.98px) {
+				height: 250px;
+			}
 		}
 	}
 	.which {
-		padding: 80px 0; background-color: #1c1c1c;
-		h2 {font-size: 33px !important;}
+		padding: 80px 0;
+		background-color: #1c1c1c;
+		h2 {
+			font-size: 33px !important;
+		}
 	}
 	.what {
 		.macos {
 			padding: 150px 0;
 			background: url("../img/mac/macos-baackground.jpg") no-repeat center;
 			background-size: cover;
-			p {color: $whiteColor !important;}
+			p {
+				color: $whiteColor !important;
+			}
 		}
-		.desc {padding: 100px 0; background-color: #1c1c1c;}
+		.desc {
+			padding: 100px 0;
+			background-color: #1c1c1c;
+		}
 	}
 	.apps-container {
 		padding: 70px 0 70px;
@@ -35,13 +47,36 @@
 				cursor: pointer;
 				filter: grayscale(1);
 				border-radius: 10px;
-				&:hover, &.active {box-shadow: 0 12px 15px -10px rgba(#666, 0.8); filter: grayscale(0);}
-				img {position: relative; top: -10px; width: 45%;}
-				h6 {position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%);}
+				&:hover,
+				&.active {
+					box-shadow: 0 12px 15px -10px rgba(#666, 0.8);
+					filter: grayscale(0);
+				}
+				img {
+					position: relative;
+					top: -10px;
+					width: 45%;
+				}
+				h6 {
+					position: absolute;
+					left: 50%;
+					bottom: 10px;
+					transform: translateX(-50%);
+				}
 			}
 		}
-		.apps {.app {&:not(.active) {display: none;}}}
+		.apps {
+			.app {
+				&:not(.active) {
+					display: none;
+				}
+			}
+		}
 	}
-	.built-in {background-color: $blackColor;}
-	.pro-apps {background-color: $backColor;}
+	.built-in {
+		background-color: $blackColor;
+	}
+	.pro-apps {
+		background-color: $backColor;
+	}
 }

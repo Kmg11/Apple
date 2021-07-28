@@ -17,11 +17,23 @@ footer {
 	ul {
 		li:not(:first-of-type) {
 			cursor: pointer;
-			&:not(:first-of-type):hover {color: #ddd !important;}}
+			&:not(:first-of-type):hover {
+				color: #ddd !important;
+			}
+		}
 	}
-	a {color: #007bff !important;}
+	a {
+		color: #007bff !important;
+	}
 	.copy {
 		border-top: 1px solid #333;
-		ul {li {cursor: pointer; &:hover {color: #ddd !important;}}}
+		ul {
+			li {
+				cursor: pointer;
+				&:hover {
+					color: #ddd !important;
+				}
+			}
+		}
 	}
 }

@@ -3,8 +3,15 @@
 	z-index: 10;
 	top: -74px;
 	form {
-		input {border-radius: 30px; background-color: #000 !important; outline: none;}
-		span:first-of-type {left: -75px; cursor: pointer;}
+		input {
+			border-radius: 30px;
+			background-color: #000;
+			outline: none;
+		}
+		span:first-of-type {
+			left: -75px;
+			cursor: pointer;
+		}
 		span:last-of-type {
 			font-size: 30px;
 			top: 50%;
@@ -12,7 +19,9 @@
 			transform: translateY(-50%);
 			cursor: pointer;
 			color: #888;
-			&:hover {color: #dc3545 !important;}
+			&:hover {
+				color: #dc3545;
+			}
 		}
 	}
 }

@@ -11,13 +11,25 @@
 						background-color: rgba($blackColor, 0.5);
 					}
 				}
-				h2 {@media (max-width: 767.98px) {font-size: 25px !important;}}
+				h2 {
+					@media (max-width: 767.98px) {
+						font-size: 25px !important;
+					}
+				}
 				background-size: cover !important;
-				& {@media (max-width: 767.98px) {background-position: center !important;}}
+				& {
+					@media (max-width: 767.98px) {
+						background-position: center !important;
+					}
+				}
 				.text-content {
 					min-height: 580px;
 					max-height: 900px;
-					p {@media (min-width: 992px) {width: 38%;}}
+					p {
+						@media (min-width: 992px) {
+							width: 38%;
+						}
+					}
 					.my-control {
 						bottom: 30px;
 						left: 50px;
