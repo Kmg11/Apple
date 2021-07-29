@@ -50,6 +50,12 @@ function imgs() {
 		.pipe(connect.reload());
 }
 
+function slickFonts() {
+	return src("project/css/plugins/fonts//*.*")
+		.pipe(dest("dist/css/fonts"))
+		.pipe(connect.reload());
+}
+
 function fonts() {
 	return src("project/webfonts/*.*")
 		.pipe(dest("dist/webfonts"))
@@ -70,10 +76,11 @@ function watchFiles() {
 	watch("project/css/plugins/*.css", { ignoreInitial: false }, css);
 	watch("project/js/*.js", { ignoreInitial: false }, js);
 
-	// watch('project/img/**/*.*', { ignoreInitial: false }, imgs)
+	watch("project/img/**/*.*", { ignoreInitial: false }, imgs);
 	watch("project/webfonts/*.*", { ignoreInitial: false }, fonts);
+	watch("project/css/plugins/fonts/*.*", { ignoreInitial: false }, slickFonts);
 
-	// watch ('dist/**/*.*', server)
+	// watch("dist/**/*.*", server);
 }
 
 exports.default = parallel(server, watchFiles);

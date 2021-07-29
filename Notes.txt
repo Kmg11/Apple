@@ -33,7 +33,7 @@ Version 3:-
 	- [ Done ] Music Header
 	- [ Done ] Music Slider Padination
 - [ Done ] Html Validation
-- Review Gulp
-- Readme FIle Add How To Edit In This Application
+- [ Done ] Readme FIle Add How To Edit In This Application
+- [ Done ] Review Gulp
 - Website Very Slow On Mobile & Librarys Loading Slow
 - Try Lazy Load
