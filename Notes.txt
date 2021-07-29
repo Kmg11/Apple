@@ -28,6 +28,12 @@ Version 3:-
 - [ Done ] SEO 100%
 - [ Done ] Best Practive 100%
 - [ Done ] Accessibility 100%
+- [ Done ] Responsive
+	- [ Done ] Header Problem
+	- [ Done ] Music Header
+	- [ Done ] Music Slider Padination
+- Html Validation
 - Review Gulp
-- Responsive On Iphone SE
 - Readme FIle Add How To Edit In This Application
+- Website Very Slow On Mobile & Librarys Loading Slow
+- Try Lazy Load
