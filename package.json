@@ -4,9 +4,6 @@
 	"description": "Apple Clone With Dark Mode",
 	"author": "Kirolos Mahfouz",
 	"main": "index.js",
-	"scripts": {
-		"start": "gulp"
-	},
 	"keywords": [
 		"Html",
 		"Css",
@@ -15,7 +12,14 @@
 		"jQuery",
 		"Gulp"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kmg11/Apple"
+	},
 	"license": "ISC",
+	"scripts": {
+		"start": "gulp"
+	},
 	"devDependencies": {
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
