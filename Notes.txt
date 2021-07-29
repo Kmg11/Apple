@@ -32,7 +32,7 @@ Version 3:-
 	- [ Done ] Header Problem
 	- [ Done ] Music Header
 	- [ Done ] Music Slider Padination
-- Html Validation
+- [ Done ] Html Validation
 - Review Gulp
 - Readme FIle Add How To Edit In This Application
 - Website Very Slow On Mobile & Librarys Loading Slow
