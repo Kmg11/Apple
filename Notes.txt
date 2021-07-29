@@ -35,5 +35,6 @@ Version 3:-
 - [ Done ] Html Validation
 - [ Done ] Readme FIle Add How To Edit In This Application
 - [ Done ] Review Gulp
-- Website Very Slow On Mobile & Librarys Loading Slow
-- Try Lazy Load
+- [ Done ] Change Images Extention For Improve Preformance
+- [ Done ] Website Very Slow On Mobile & Librarys Loading Slow
+- [ Done ] Try Lazy Load
