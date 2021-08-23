@@ -15,13 +15,9 @@ Landing page with a high level of performance, fully responsive, image optimizat
 
 ### Features
 
-- Compatible with all devices such as mobile
-- Compatible with all browsers such as Chrome and Firefox
-- Compatible with search engines
-- Compatible with screen readers
+- Compatible with all devices, browsers, search engines and screen readers
 - Optimize images
 - High performance
-- Html Validation
 - Dark Mode
 
 ---
@@ -30,7 +26,6 @@ Landing page with a high level of performance, fully responsive, image optimizat
 
 - Html
 - Css
-- Javascript
 - Jquery
 - Bootstrap
 - Sass
