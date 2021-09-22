@@ -69,6 +69,6 @@ Landing page with a high level of performance, fully responsive, image optimizat
 
 ### My Links
 
-- [Linkedin](https://www.linkedin.com/in/kirolos-m-a29134165/)
+- [Linkedin](https://www.linkedin.com/in/kirolos-mahfouz/)
 - [Github](https://github.com/Kmg11)
 - [Facebook](https://www.facebook.com/KirolosMahfouz/)
